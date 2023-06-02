@@ -1,4 +1,4 @@
-/* Copyright(c) 2023 Igbe Chijioke
+/* Copyright(c) 2023 Odey John Ebinyi 
 *  All Rights Reserved
 * 
 * This is the admin web page where his profile is displayed.
@@ -208,7 +208,7 @@ void admin_profile(string username)
             cout << "<br>" << endl;
    
 			cout << cgicc::div() << endl;
-			cout << h3("Igbe Chijioke: Oxford Brookes Online Forum (c) 2023");
+			cout << h3("Odey John Ebinyi: Oxford Brookes Online Forum (c) 2023");
 			cout << a().set("href", "#").set("class", "rights-reserved-link") << "All Rights Reserved" << a() << endl;
 			cout << cgicc::div() << endl;	
 
