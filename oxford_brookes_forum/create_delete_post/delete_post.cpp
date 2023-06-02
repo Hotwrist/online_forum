@@ -1,4 +1,4 @@
-/* Copyright(c) 2023 Igbe Chijioke
+/* Copyright(c) 2023 Odey John Ebinyi
 *  All Rights Reserved
 * 
 *  Description: This file helps a user delete a post.
@@ -49,9 +49,9 @@ void error(string err_message)
 
        	cout << body() << endl;
 
-		cout << html();	
+	cout << html();	
    	
-		exit(EXIT_SUCCESS);
+	exit(EXIT_SUCCESS);
 }
 
 /* The redirect_to_login Function
@@ -63,8 +63,8 @@ void redirect_to_login()
 {
 	try
 	{
-			cout << HTTPHTMLHeader() << endl;
-			cout << html() << head(title("Oxford Brookes Online Forum")).add(meta().set("http-equiv", "refresh").set("content", "0; URL=../../")) << endl;
+		cout << HTTPHTMLHeader() << endl;
+		cout << html() << head(title("Oxford Brookes Online Forum")).add(meta().set("http-equiv", "refresh").set("content", "0; URL=../../")) << endl;
         	cout << head() << endl;
         	cout << body();
         
