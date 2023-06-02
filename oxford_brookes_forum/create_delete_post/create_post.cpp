@@ -1,4 +1,4 @@
-/* Copyright(c) 2023 Igbe Chijioke
+/* Copyright(c) 2023 Odey John Ebinyi
 *  All Rights Reserved
 * 
 *  Description: This C++ File helps the users to create posts.
@@ -39,7 +39,7 @@ using namespace sql;
 void error(string err_message) 
 {
     	cout << HTTPHTMLHeader() << endl;
-		cout << html() << head(title("Oxford Brookes Online Forum")).add(meta().set("http-equiv", "refresh").set("content", "0; URL=.")) << endl;
+	cout << html() << head(title("Oxford Brookes Online Forum")).add(meta().set("http-equiv", "refresh").set("content", "0; URL=.")) << endl;
        	cout << head() << endl;
        	cout << body();
         
@@ -49,9 +49,9 @@ void error(string err_message)
 
        	cout << body() << endl;
 
-		cout << html();	
+	cout << html();	
    	
-		exit(EXIT_SUCCESS);
+	exit(EXIT_SUCCESS);
 }
 
 /* The redirect_to_login Function
@@ -173,5 +173,5 @@ int main()
 				redirect_to_login();
     }
 	
-	return 0;
+return 0;
 }
