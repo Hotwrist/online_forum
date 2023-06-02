@@ -35,53 +35,49 @@ how to solve the problem of replicating that behaviour in software.*
 
 
 # Images
-Testing Site for HTTPS
-![testing_https](https://github.com/Hotwrist/online_forum/assets/38595935/03b2fea6-dd02-48ac-87dd-60a112cb0762)
+## Testing Site for HTTPS
+![testing](https://github.com/Hotwrist/online_forum/assets/38595935/a52ddac4-b764-46af-b19e-ad618c20bd32)
 
 
-Registration Page
+
+## Registration Page
 ![register](https://github.com/Hotwrist/online_forum/assets/38595935/1dcec856-7899-4be2-b113-7f814fed98cc)
 
-List of Thread(admin can view it)
+## List of Thread(admin can view it)
 ![list_thread](https://github.com/Hotwrist/online_forum/assets/38595935/8ad4e939-981e-4628-a68a-1f98ab1873c7)
 
-List of Thread(ordianry users can view it)
+## List of Thread(ordianry users can view it)
 ![list_thread2](https://github.com/Hotwrist/online_forum/assets/38595935/b4bd217a-8662-4ec4-a397-156a8c5005a9)
 
-List of Posts in a specific thread
+## List of Posts in a specific thread
 ![posts](https://github.com/Hotwrist/online_forum/assets/38595935/b651d793-b13d-47e1-bc5c-84918b0ff7c6)
 
 
 # Security Requirements
 
-2FA Page
+## 2FA Page
 ![2fa](https://github.com/Hotwrist/online_forum/assets/38595935/474da39e-b4a0-451b-b992-123c22da12fa)
 
 
-Admin 3FA
+## Admin 3FA
 ![3fa](https://github.com/Hotwrist/online_forum/assets/38595935/a9fb934c-6836-4f4d-a48c-1a8907f7be24)
 
 
-Admin Profile Page
+## Admin Profile Page
 ![admin_pp](https://github.com/Hotwrist/online_forum/assets/38595935/119029b7-de6d-4649-8da4-dceee8818a8a)
 
 
-Ordinary Users Profile Page
+## Ordinary Users Profile Page
 ![users_pp](https://github.com/Hotwrist/online_forum/assets/38595935/eac0df4b-df8e-4ff8-8aca-aa4627867d7a)
 
-Logout Page
+## Logout Page
 ![logout](https://github.com/Hotwrist/online_forum/assets/38595935/be2a90a2-563f-4bb4-ac21-9ba9c8ad2f59)
 
 
-Handling Unauthorized Access (i.e An offline user trying to access a page)
+## Handling Unauthorized Access (i.e An offline user trying to access a page)
 ![u_access](https://github.com/Hotwrist/online_forum/assets/38595935/278e2735-4fcb-4dda-a30d-11b8e4962828)
 
 
-Sessions ID, Encrypted Passwords
+## Sessions ID, Encrypted Passwords
 ![e_pass](https://github.com/Hotwrist/online_forum/assets/38595935/5ed67890-2ab3-4e68-bb09-f64d74ed44f5)
 ![e_session](https://github.com/Hotwrist/online_forum/assets/38595935/ebd6134f-bb36-4f74-b268-1457d6177e55)
-
-
-
-
-
