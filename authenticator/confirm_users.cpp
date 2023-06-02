@@ -1,4 +1,4 @@
-/* Copyright(c) 2023 Igbe Chijioke
+/* Copyright(c) 2023 Odey John Ebinyi
 *  All Rights Reserved
 *  
 * Description: This C++ file sets up the session cookies and validate the user.
@@ -294,9 +294,9 @@ void make_online(string username)
                 	}
         	}
         	
-			else
-			{
-					bool online = false;
+		else
+		{
+			bool online = false;
 			
             		prep_stmt = con->prepareStatement("SELECT online FROM login WHERE username=?");
             		prep_stmt->setString(1, username);
@@ -319,9 +319,9 @@ void make_online(string username)
             		{
             			error_redirect("ERROR: You are online and active!.");
             		}
-			}
+		}
 		
-			con->close();
+		con->close();
     		delete con;
     		delete prep_stmt;
     		delete res;
@@ -346,16 +346,16 @@ void redirect_to_admin_page(string username)
 	{
 		cout << HTTPHTMLHeader() << endl;
 		cout << html() << head(title("Oxford Brookes Online Forum")).add(meta().set("http-equiv", "refresh").set("content", "0; URL=../admin/index.cgi?username="+username)) << endl;
-        cout << head() << endl;
-        cout << body();
-        
-       	cout << script() << endl;
-        cout << "alert(\"Congratulations, you have been authenticated successfully!!\");" << endl;
-        cout << script() << endl;
+		cout << head() << endl;
+		cout << body();
 
-        cout << body() << endl;
+		cout << script() << endl;
+		cout << "alert(\"Congratulations, you have been authenticated successfully!!\");" << endl;
+		cout << script() << endl;
 
-       	cout << html();	
+		cout << body() << endl;
+
+		cout << html();	
 	}
 	catch(exception &e)
 	{
@@ -460,14 +460,14 @@ bool check_sessionID(string username, string SessionID)
         Driver *driver;
         Connection *con;
         ResultSet *res;
-		PreparedStatement *prep_stmt;
+	PreparedStatement *prep_stmt;
 	
         driver = get_driver_instance();
         
         // creates a database connection using the driver. The parameters to the driver is the :
-		// DB_HOST_URL: MySQL server IP address and port, 
-		// the user 'stateful' that is allowed access to the Sessions database, and
-		// lastly, its password.
+	// DB_HOST_URL: MySQL server IP address and port, 
+	// the user 'stateful' that is allowed access to the Sessions database, and
+	// lastly, its password.
         con = driver->connect(DB_HOST_URL, "stateful", "mxyct654@3$$%uity987#&hicdf");
         
         /* select appropriate database schema and connect to it. (We are making use of the 'Users' schema created using create_database.sql file) */
