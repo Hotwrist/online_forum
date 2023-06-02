@@ -51,7 +51,7 @@ bool string_starts_with(string main_str, string to_match)
 void error(string err_message) 
 {
     	cout << HTTPHTMLHeader() << endl;
-		cout << html() << head(title("Oxford Brookes Online Forum")).add(meta().set("http-equiv", "refresh").set("content", "0; URL=.")) << endl;
+	cout << html() << head(title("Oxford Brookes Online Forum")).add(meta().set("http-equiv", "refresh").set("content", "0; URL=.")) << endl;
 
        	cout << head() << endl;
        	cout << body();
@@ -62,9 +62,9 @@ void error(string err_message)
 
        	cout << body() << endl;
 
-		cout << html();	
+	cout << html();	
    	
-		exit(EXIT_SUCCESS);
+	exit(EXIT_SUCCESS);
 }
 
 /* The redirect_to_login Function
@@ -233,13 +233,13 @@ int main()
 
 		fi = form_data.getElement("email");
 		if (!fi->isEmpty() && fi != (*form_data).end())
-				email = **fi;
+			email = **fi;
 
 		fi = form_data.getElement("fullname");
 		if (!fi->isEmpty() && fi != (*form_data).end())
-				fullname = **fi;
+			fullname = **fi;
 				
-			register_user(username, password, email, fullname);
+		register_user(username, password, email, fullname);
 	}
 
 	return 0;
