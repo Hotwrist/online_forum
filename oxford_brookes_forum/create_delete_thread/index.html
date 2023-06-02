@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Admin Create Thread Web Page</title>
+        <meta name="description" content="Web page for the admin to create a thread.">
+        <meta name="author" content="Igbe Chijioke">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../../static_files/css/main.css">
+    </head>
+    <body class="create-thread-index-html-body">
+		<h1 style="color:white">Oxford Brookes Online Forum</h1>
+		<div class="create-thread-index-html-container">
+			<form method="POST" action="create_thread.cgi">
+				<label for="thread-title" style="font-weight: bold;font-size:1.5rem">Thread: </label>
+				<input type="text" id="thread-title" name="thread-title" placeholder="..Type the name of the thread you want to create(Note: not more than 100 characters)"
+					style="height:100px" />
+				<input class="submit" type="submit" value="create"/>
+			</form>
+		</div>
+		<div class="footer">
+			<h3>Igbe Chijioke: Oxford Brookes Online Forum (c) 2023</h3>
+			<a href="#" class="rights-reserved-link">All Rights Reserved</a>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,608 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+	margin: 50px auto;
+	font-family: system-ui, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	background-color: rgb(224, 220, 220);
+}
+
+
+/* for register/index.cpp */
+.header-box p{
+	color: rgb(24, 49, 83);
+	font-size: 30px;
+	font-weight: bold;
+}
+
+/***********************************/
+
+/****** For index.cpp in register/index.cpp *******/
+.login-box {
+	width: 280px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: dark;
+	text-align: center;
+	border: 2px solid white;
+	padding-left: 30%;
+	padding-right: 30%;
+	background-color: white;
+}
+
+.login-box h1 {
+	font-size: 40px;
+	border-bottom: 6px solid #4169E1;
+	margin-bottom: 50px;
+	padding: 13px 0px;
+}
+
+.login-box p {
+	font-weight: bold;
+}
+/**************************************/
+
+/************ For Index.cpp & register/index.cpp (start page) ************* */
+h1 {
+	font-size: 40px;
+	border-bottom: 6px solid #4169E1;
+	margin-bottom: 50px;
+	padding: 13px 0px;
+	color: dark;
+}
+
+.login-register-box
+{
+	border: 2px solid white;
+	padding-left: 30%;
+	padding-right: 30%;
+	margin-top: 3%;
+	background-color: white;
+	padding-bottom: 2rem;
+}
+
+input {
+	border-radius: 0.50rem;
+	outline: none;
+	font-size: 18px;
+	margin-bottom: 0.75rem;
+	width: 80%;
+}
+
+.btn {
+	width: 50%;
+	background: none;
+	border: 2px solid #4169E1;
+	color: dark;
+	padding: 5px;
+	font-size: 18px;
+	cursor: pointer;
+	margin: 12px 0;
+	border-radius: 1rem;
+	margin-bottom: 2rem;
+}
+
+.btn:hover {
+	background-color: #4169E1;
+	color: white;
+	transition: 0.7s;
+}
+
+.forgot_password, .sign_up{
+	text-decoration: none;
+	font-weight: bold;
+	margin-left: 0.75rem;
+}
+
+/*********************************************************************/
+/****************ordinary_users/index.cpp Profile Page ****************/
+/*forum-home-page-body is for oxford_brookes_forum/index.cpp */
+.user-profile-body, .forum-home-page-body {
+	font-family: sans-serif;
+	font-weight: 300;
+	line-height: 1.42em;
+	color: #A7A1AE;
+	display: block;
+	left: 50px;
+	background-color: #1F2739;
+}
+
+.username-box p{
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+	display: block;
+	text-align: center;
+}
+
+#profile-page {
+	font-size: 3em;
+	font-weight: 400;
+	line-height: 1em;
+	text-align: center;
+	color: #4DC3FA;
+}
+
+.container th h1 {
+	font-weight: bold;
+	font-size: 1.9em;
+	text-align: center;
+	color: 2980B9;/*#27AE60; #185875;*/
+}
+
+.container td {
+	font-weight: bold;
+	font-size: 1.5em;
+	-webkit-box-shadow: 0 2px 2px -2px #0E1119;
+	-moz-box-shadow: 0 2px 2px -2px #0E1119;
+	box-shadow: 0 2px 2px -2px #0E1119;
+}
+
+.container {
+	text-align: left;
+	overflow: hidden;
+	width: 80%;
+	margin: 0 auto;
+	display: table;
+	padding: 0 0 8em 0;
+}
+
+.container td, .container th {
+	padding-bottom: 2%;
+	padding-top: 2%;
+	padding-left: 2%;
+}
+
+/* background color of odd rows */
+.container tr:nth-child(odd) {
+	background-color: #323C50;
+}
+
+/* background color of even rows */
+.container tr:nth-child(even) {
+	background-color: #2C3446;
+}
+
+/* th background for company and skill required */
+.container th {
+	background-color: #323C50; /*#1F2739;*/
+}
+
+.container td:first-child {
+	color: #FB667A;
+}
+
+.rights-reserved-link {
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-decoration: none;
+	margin-left: 10px;
+	color: lightblue;
+	position: absolute;
+	left: 52rem;
+}
+
+
+h3{
+	font-size: 1.5rem;
+	margin-left: 10px;
+	color: white;
+	text-align: center;
+}
+
+.online-dot{
+	/*height: 25px;
+	width: 25px;
+	border-radius: 50%;
+	color: darkgreen;
+	background-color: lightgreen;
+	position: absolute;
+	top: 480px;
+	left: 1120px;
+	margin: 12px;
+	align-items: center;*/
+	position: relative;
+	left: 850px;
+	width: 25px;
+	height: 25px;
+	border-radius: 100%;
+	background-color: lightgreen;
+	overflow: hidden;
+}
+
+.logout-btn{
+	width: 15%;
+	background: none;
+	border: 2px solid #4169E1;
+	color: white;
+	padding: 5px;
+	font-size: 18px;
+	cursor: pointer;
+	margin-left: 12rem;
+	border-radius: 1rem;
+	margin-bottom: 2rem;
+}
+
+.logout-btn:hover {
+	background-color: #4169E1;
+	color: white;
+	transition: 0.7s;
+}
+
+.forum-btn{
+	position: absolute;
+	left: 1185px;
+	top: 180px;
+	width: 15%;
+	background: none;
+	border: 2px solid #4169E1;
+	color: white;
+	padding: 5px;
+	font-size: 18px;
+	cursor: pointer;
+	margin-left: 12rem;
+	border-radius: 1rem;
+	margin-bottom: 2rem;
+}
+
+.forum-btn:hover {
+	background-color: #4169E1;
+	color: white;
+	transition: 0.7s;
+}
+
+/* https://codepen.io/sajadhsm/pen/vYgMXjY */
+.profile-pic{
+	position: relative;
+	left: 850px;
+	width: 200px;
+	height: 200px;
+	border-radius: 100%;
+	background-color: #f5f5f5;
+	overflow: hidden;
+}
+
+.profile-pic::before{
+	position: absolute;
+	bottom: 85px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 75px;
+	height: 75px;
+	background-color: #ddd;
+	border-radius: 100%;
+	content: '';
+}
+
+.profile-pic::after{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 110px;
+	height: 90px;
+	background-color: #ddd;
+	border-top-left-radius: 45px;
+	border-top-right-radius: 45px;
+	content: '';
+}
+/***********************************************************************/
+
+/**************** logout/index.cpp**************************************/
+.logout-body {
+	font-family: sans-serif;
+	font-weight: 300;
+	line-height: 1.42em;
+	color: #A7A1AE;
+	display: block;
+	left: 50px;
+	background-color: #1F2739;
+}
+
+#logout-h1 {
+	font-size: 40px;
+	border-bottom: 6px solid #4169E1;
+	margin-bottom: 50px;
+	padding: 13px 0px;
+	color: white;
+	text-align: center;
+}
+
+#logout-msg{
+	color: white;
+	padding-left: 4rem;
+	font-weight: bold;
+	font-size: 2rem;
+}
+
+.login-btn{
+	width: 15%;
+	background: none;
+	border: 2px solid #4169E1;
+	color: white;
+	padding: 5px;
+	font-size: 18px;
+	cursor: pointer;
+	margin-left: 4rem;
+	border-radius: 1rem;
+	margin-bottom: 2rem;
+}
+
+.login-btn:hover {
+	background-color: #4169E1;
+	color: white;
+	transition: 0.7s;
+}
+/***********************************************************************/
+/*********************FORUM HOME PAGE (oxford_brookes_forum/index.cpp)************************/
+#forum-home-page-h1{
+	text-align: center;
+	padding-bottom: 1rem;
+	color: lightblue;
+}
+
+.ordered-thread-list{
+	margin-top: 130px;
+}
+
+li{
+	background-color: #fff;
+    margin-top: 1.7em;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    margin-left: 0.40rem;
+    margin-right: 0.40rem;
+    padding: 0.75rem;
+    font-size: 1.3rem;
+    list-style-type: square;
+    list-style-position: inside;
+    color: navy;
+    font-weight: bold;
+    background-color: #f0f1f3;
+    height: 30px;
+    padding: 1rem 1rem;
+}
+
+.thread-link{
+	text-decoration: none;
+	font-weight: bold;
+	margin-left: 0.75rem;
+	color: #1F2739;
+}
+
+.thread-link:hover {
+	color: gray;
+	transition: 0.7s;
+}
+
+.create-new-thread-btn, .delete-threads-btn {
+	position: absolute;
+	left: 1000px;
+	top: 150px;
+	width: 15%;
+	background: none;
+	border: 2px solid #4169E1;
+	color: white;
+	padding: 5px;
+	font-size: 18px;
+	cursor: pointer;
+	margin-left: 12rem;
+	border-radius: 1rem;
+	margin-bottom: 2rem;
+	
+}
+
+.delete-threads-btn{
+	left: 200px;
+	background-color: red;
+	border: 2px solid #fff;	
+}
+
+.create-new-thread-btn:hover, .delete-threads-btn:hover {
+	background-color: lightcoral;
+	color: white;
+	transition: 0.7s;
+}
+
+#create-new-thread-link, #delete-thread-link{
+	text-decoration: none;
+	padding-left: 65px;
+	color: white;
+	font-weight: bold;
+}
+
+.footer{
+	position: relative;
+	left: 10px;
+	bottom: 35px;
+	right: 10px;
+	width: 95%;
+	text-align: center;
+	margin-top: 100px;
+}
+/*********************************************************************************************/
+/************************** oxford_brookes_forum/create_delete_thread/index.html && for create_post/index.html ********************/
+.create-thread-index-html-body, .create-post-index-html-body{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	background-color: #1F2739;
+}
+
+label{
+	padding: 12px 12px 12px 0;
+	display: inline-block;
+}
+
+.create-thread-index-html-container, .create-post-index-html-container{
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+	width: 90vw;
+}
+
+.submit{
+	background-color: darkblue;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	float: left;
+	width: 20vw;
+	margin-left: 100px;
+	font-weight: bold;
+}
+/*********************************************************************************************/
+/************************ oxford_brookes_forum/thread_posts.cpp *******************************/
+.ordered-post-list{
+	display: flex;
+	flex-wrap: wrap;
+	border: 2px solid white;
+	border-radius: 20px;
+	margin-top: 150px;
+}
+
+.ordered-post-list>li{
+	background-color: #fff;
+    margin-top: 0.4em;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    margin-left: 400px;
+    margin-right: 400px;
+    padding: 0.75rem;
+    font-size: 1.3rem;
+    list-style-type: none;
+    list-style-position: inside;
+    color: darkgray;
+    background-color: #f0f1f3;
+    width: 50%;
+    padding: 1rem 1rem;
+    height: 100%;
+}
+
+.users-profile-pic-post{
+	position: relative;
+	left: 10px;
+	width: 45px;
+	height: 45px;
+	border: 2px solid black;
+	border-radius: 100%;
+	background-color: #f5f5f5;
+	overflow: hidden;
+}
+
+.users-profile-pic-post::before{
+	position: absolute;
+	bottom: 25px;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 15px;
+	height: 15px;
+	background-color: #ddd;
+	border-radius: 100%;
+	border: 2px solid black;
+	content: '';
+}
+
+.users-profile-pic-post::after{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 35px;
+	height: 25px;
+	background-color: #ddd;
+	border-top-left-radius: 45px;
+	border-top-right-radius: 45px;
+	border: 2px solid black;
+	content: '';
+}
+
+.fk-username{
+	color: black;
+	font-size: 0.7em;
+}
+
+.thread-post{
+	color: black;
+	font-size: 0.8em;
+	font-weight: lighter;
+	display: inline-block;
+	background-color: lightgray;
+	margin-top: 2px;
+}
+
+.delete-post{
+	text-decoration: none;
+	display: block;
+	font-size: 0.8em;
+	font-weight: bold;
+	color: red;
+}
+
+.make-a-post-btn {
+	position: absolute;
+	left: 600px;
+	top: 150px;
+	width: 15%;
+	background: none;
+	border: 2px solid #4169E1;
+	color: white;
+	padding: 5px;
+	font-size: 18px;
+	cursor: pointer;
+	margin-left: 12rem;
+	border-radius: 1rem;
+	margin-bottom: 2rem;	
+}
+
+.make-a-post-btn:hover {
+	background-color: lightcoral;
+	color: white;
+	transition: 0.7s;
+}
+
+#make-a-post-link {
+	text-decoration: none;
+	padding-left: 65px;
+	color: white;
+	font-weight: bold;
+}
+
+.create-post-footer{
+	position: relative;
+	left: 10px;
+	bottom: 35px;
+	right: 10px;
+	width: 95%;
+	top: 400px;
+	text-align: center;
+	border: 2px solid green;
+}
+
+.create-post-rights-reserved-link {
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-decoration: none;
+	margin-left: 10px;
+	margin-top: 350px;
+	color: lightblue;
+	position: absolute;
+	left: 52rem;
+}
+
+.h3-create-post{
+	margin-top: 200px;
+}
+/**********************************************************************************************/
