@@ -1,4 +1,4 @@
-/* Copyright(c) 2023 Igbe Chijioke
+/* Copyright(c) 2023 Odey John Ebinyi
 *  All Rights Reserved
 * 
 *  Description: This file displays the thread page. That is the list of threads created by the admin.
@@ -155,25 +155,25 @@ void oxford_brookes_forum_home_page(string username)
 				cout << cgicc::div().set("class", "delete-threads-btn") << endl;
 				cout << a().set("href", "create_delete_thread/delete_threads.cgi").set("id", "create-new-thread-link") << "Delete Threads" << a() << endl;
 				cout << cgicc::div() << endl;						
-			}
+		}
           	
-			cout << ol().set("class", "ordered-thread-list") << endl;
+		cout << ol().set("class", "ordered-thread-list") << endl;
 
-            /* fetch the data : retrieve all the rows in the result set */
-            while(res->next())
-            {
-                cout << "<li>" << endl;
-                cout << a().set("href", "thread_posts.cgi?thread="+res->getString("thread_name")+"&username="+username).set("class", "thread-link") << res->getString("thread_name") << a() << endl;
-               	cout << "</li>" << endl;
-            }
+            	/* fetch the data : retrieve all the rows in the result set */
+		while(res->next())
+		{
+			cout << "<li>" << endl;
+			cout << a().set("href", "thread_posts.cgi?thread="+res->getString("thread_name")+"&username="+username).set("class", "thread-link") << res->getString("thread_name") << a() << endl;
+			cout << "</li>" << endl;
+		}
 
-            cout << ol() << endl;
-            cout << "<br>" << endl;
-   
-			cout << cgicc::div().set("class", "footer") << endl;
-			cout << h3("Igbe Chijioke: Oxford Brookes Online Forum (c) 2023");
-			cout << a().set("href", "#").set("class", "rights-reserved-link") << "All Rights Reserved" << a() << endl;
-			cout << cgicc::div() << endl;	
+	        cout << ol() << endl;
+	        cout << "<br>" << endl;
+
+		cout << cgicc::div().set("class", "footer") << endl;
+		cout << h3("Odey John Ebinyi: Oxford Brookes Online Forum (c) 2023");
+		cout << a().set("href", "#").set("class", "rights-reserved-link") << "All Rights Reserved" << a() << endl;
+		cout << cgicc::div() << endl;	
 
         	cout << body() << endl;
         	cout << html();
