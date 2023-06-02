@@ -1,4 +1,4 @@
-/* Copyright(c) 2023 Igbe Chijioke
+/* Copyright(c) 2023 Odey John Ebinyi
 *  All Rights Reserved
 * 
 *  Description: This file displays the HTML page for all thread posts made by users.
@@ -141,19 +141,19 @@ void show_thread_posts(string thread, string username)
         	cout << h1("Thread: "+thread).set("id", "forum-home-page-h1");
           	
           	cout << cgicc::div().set("class", "make-a-post-btn") << endl;
-			cout << a().set("href", "create_delete_post/?username="+username+"&thread_name="+thread).set("id", "make-a-post-link") << "Make a Post" << a() << endl;
-			cout << cgicc::div() << endl;
-          	
-			cout << ol().set("class", "ordered-post-list") << endl;
-			cout << h4("Posts by Users:") << endl;
+		cout << a().set("href", "create_delete_post/?username="+username+"&thread_name="+thread).set("id", "make-a-post-link") << "Make a Post" << a() << endl;
+		cout << cgicc::div() << endl;
+
+		cout << ol().set("class", "ordered-post-list") << endl;
+		cout << h4("Posts by Users:") << endl;
 			
             /* fetch the data : retrieve all the rows in the result set */
             while(res->next())
             {
                 cout << "<li>" << endl;
                 cout << cgicc::div().set("class", "users-profile-pic-post") << endl;
-				cout << cgicc::div() << endl;
-				cout << p("&#176; by "+res->getString("username")).set("class", "fk-username") << endl;
+		cout << cgicc::div() << endl;
+		cout << p("&#176; by "+res->getString("username")).set("class", "fk-username") << endl;
                 cout << p(res->getString("thread_post")).set("class", "thread-post") << endl;
                 
                 string author_of_post = res->getString("username");
@@ -167,21 +167,21 @@ void show_thread_posts(string thread, string username)
                 // his own post.
                 if((author_of_post == "admin") && (username == "admin"))
                 {
-					cout << a().set("href", "create_delete_post/delete_post.cgi?username="+author_of_post+"&id="+to_string(post_id)+"&thread="+thread).set("class", "delete-post") << "Delete" << a() << endl;
-				}
+			cout << a().set("href", "create_delete_post/delete_post.cgi?username="+author_of_post+"&id="+to_string(post_id)+"&thread="+thread).set("class", "delete-post") << "Delete" << a() << endl;
+		}
 				
-				// If the author of the post is not admin and username on the address bar is admin, then the 
-				// admin can delete the post of others and his own post also.
-				if((author_of_post != "admin") && (username == "admin"))
-				{
-					cout << a().set("href", "create_delete_post/delete_post.cgi?username="+username+"&id="+to_string(post_id)+"&thread="+thread).set("class", "delete-post") << "Delete" << a() << endl;
+		// If the author of the post is not admin and username on the address bar is admin, then the 
+		// admin can delete the post of others and his own post also.
+		if((author_of_post != "admin") && (username == "admin"))
+		{
+			cout << a().set("href", "create_delete_post/delete_post.cgi?username="+username+"&id="+to_string(post_id)+"&thread="+thread).set("class", "delete-post") << "Delete" << a() << endl;
                	}
                	
                	// If the author of the post is not admin and username on the address bar is not admin and the username on the address bar
                	// is the same as the author of the post, then the current user can delete his very own post and not the post of others.
                	if((author_of_post != "admin") && (username != "admin") && (username == author_of_post))
                	{
-					cout << a().set("href", "create_delete_post/delete_post.cgi?username="+author_of_post+"&id="+to_string(post_id)+"&thread="+thread).set("class", "delete-post") << "Delete" << a() << endl;
+			cout << a().set("href", "create_delete_post/delete_post.cgi?username="+author_of_post+"&id="+to_string(post_id)+"&thread="+thread).set("class", "delete-post") << "Delete" << a() << endl;
                	}
                	
                	cout << "</li>" << endl;
@@ -190,10 +190,10 @@ void show_thread_posts(string thread, string username)
             cout << ol() << endl;
             cout << "<br>" << endl;
    
-			cout << cgicc::div() << endl;
-			cout << h3("Igbe Chijioke: Oxford Brookes Online Forum (c) 2023");
-			cout << a().set("href", "#").set("class", "rights-reserved-link") << "All Rights Reserved" << a() << endl;
-			cout << cgicc::div() << endl;	
+		cout << cgicc::div() << endl;
+		cout << h3("Igbe Chijioke: Oxford Brookes Online Forum (c) 2023");
+		cout << a().set("href", "#").set("class", "rights-reserved-link") << "All Rights Reserved" << a() << endl;
+		cout << cgicc::div() << endl;	
 
         	cout << body() << endl;
         	cout << html();
