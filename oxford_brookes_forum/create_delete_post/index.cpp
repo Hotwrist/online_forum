@@ -1,4 +1,4 @@
-/* Copyright(c) 2023 Igbe Chijioke
+/* Copyright(c) 2023 Odey John Ebinyi
 *  All Rights Reserved
 */
 
@@ -38,10 +38,10 @@ void create_post_page(string username, string thread_name)
         cout << input().set("type", "submit").set("value", "create").set("class", "submit") << endl;
         cout << form() << endl;
 
-		cout << cgicc::div().set("class", "create-post-footer") << endl;
-		cout << h3("Igbe Chijioke: Oxford Brookes Online Forum (c) 2023").set("class", "h3-create-post") << endl;
-		cout << a().set("href", "#").set("class", "create-post-rights-reserved-link") << "All Rights Reserved" << a() << endl;
-		cout << cgicc::div() << endl;
+	cout << cgicc::div().set("class", "create-post-footer") << endl;
+	cout << h3("Odey John Ebinyi: Oxford Brookes Online Forum (c) 2023").set("class", "h3-create-post") << endl;
+	cout << a().set("href", "#").set("class", "create-post-rights-reserved-link") << "All Rights Reserved" << a() << endl;
+	cout << cgicc::div() << endl;
 		
         cout << body() << endl;
         cout << html();
@@ -73,8 +73,8 @@ int main()
         	if (!fi->isEmpty() && fi != (*form_data).end()) 
            		thread_name = **fi;
       		
-			create_post_page(username, thread_name);
-    }
+		create_post_page(username, thread_name);
+   	 }
 	
 	return 0;
 }
