@@ -44,10 +44,12 @@ how to solve the problem of replicating that behaviour in software.*
 ![register](https://github.com/Hotwrist/online_forum/assets/38595935/1dcec856-7899-4be2-b113-7f814fed98cc)
 
 ## List of Thread(admin can view it)
-![list_thread](https://github.com/Hotwrist/online_forum/assets/38595935/8ad4e939-981e-4628-a68a-1f98ab1873c7)
+![aview2](https://github.com/Hotwrist/online_forum/assets/38595935/0fc08645-0e89-426e-a984-d241fd5fc75f)
+
 
 ## List of Thread(ordianry users can view it)
-![list_thread2](https://github.com/Hotwrist/online_forum/assets/38595935/b4bd217a-8662-4ec4-a397-156a8c5005a9)
+![uview2](https://github.com/Hotwrist/online_forum/assets/38595935/630fe43a-fe35-4e7f-91d2-6ceb6004d43f)
+
 
 ## List of Posts in a specific thread
 ![posts](https://github.com/Hotwrist/online_forum/assets/38595935/b651d793-b13d-47e1-bc5c-84918b0ff7c6)
