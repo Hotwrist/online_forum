@@ -1,4 +1,4 @@
-/* Copyright(c) 2023 Igbe Chijioke
+/* Copyright(c) 2023 Odey John Ebinyi
 *  All Rights Reserved
 * 
 *  Description: This C++ File is responsible for displaying the
@@ -196,14 +196,14 @@ void user_profile(string username)
                 cout << "</td>" << endl;
                 cout << "</tr>" << endl;
             }
-            cout << "</tbody>" << endl;
-            cout << table() << endl;
-            cout << "<br>" << endl;
+            	cout << "</tbody>" << endl;
+            	cout << table() << endl;
+            	cout << "<br>" << endl;
    
-			cout << cgicc::div() << endl;
-			cout << h3("Igbe Chijioke: Oxford Brookes Online Forum (c) 2023");
-			cout << a().set("href", "#").set("class", "rights-reserved-link") << "All Rights Reserved" << a() << endl;
-			cout << cgicc::div() << endl;	
+		cout << cgicc::div() << endl;
+		cout << h3("Odey John Ebinyi: Oxford Brookes Online Forum (c) 2023");
+		cout << a().set("href", "#").set("class", "rights-reserved-link") << "All Rights Reserved" << a() << endl;
+		cout << cgicc::div() << endl;	
 
         	cout << body() << endl;
         	cout << html();
@@ -231,8 +231,8 @@ int main()
       		username = **fi; 
       		
       		if(is_online(username))
-				user_profile(username);
-			else
-				redirect_to_login();
+			user_profile(username);
+		else
+			redirect_to_login();
    	}
 }
